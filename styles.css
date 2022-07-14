@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarala&display=swap');
+@import url('/fonts_a/style.css');
+
+:root {
+    --bgr: #100A2C;
+    --primary: #a5aebd;
+    --accent: #0B6AF9;
+    --default: #A4A4A4;
+
+    --hr: rgba(255, 255, 255, 0.2);
+    --bg_button: rgba(255, 255, 255, 0.1);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--bgr);
+    min-height: 100vh;
+    font-family: 'Sarala', sans-serif;
+    text-align: center;
+    margin: auto;
+    
+}
+/* Header */
+header {
+    min-height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    fill: white;
+    max-width: 130px;
+    max-height: 40px;
+    margin-top: 6px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+.actions i {
+    font-size: 20px;
+}
+
+.nav {
+    color: var(--primary);
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    background: var(--bg_button);
+    padding: 1px 4px;
+    border-radius: 4px;
+}
+
+.icon-add {
+    /* margin-right: 30px; */
+    font-size: 10px;
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+}
+
+.login i {
+    margin-right: 10px;
+}
+
+.login span {
+    font-size: 20px;
+}
+
+hr {
+    border-color: var(--hr);
+}
+
+/* Main */
+#main {
+    display: flex;
+    /* offset-anchor: center; */
+    margin: 1em auto 2em;
+    /* width: 900px; */
+    /* outline: solid red; */
+    /* flex-direction: row; */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.column_odd {
+    width: 300px;
+    
+}
+
+.column_honest {
+    width: 400px;
+    margin: 0px 30px;
+}
+
+.column_honest .posts {
+    width: 400px;
+    /* outline: solid blue; */
+
+}
+
+.column_honest .user_photo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow:hidden;
+    width: 400px;
+    height: 300px;
+}
+.column_honest .user_photo img {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width: 400px;
+    height:300px;
+    border-radius: 10px;
+    object-fit:cover;
+}
+
+.column_odd .posts {
+    /* outline: solid blue; */
+    width: 300px;
+    display: block;
+}
+
+.user_photo {
+    position: relative;
+    /* outline: solid rgb(69, 172, 43); */
+
+    display: flex;
+    justify-content: center;
+    overflow:hidden;
+    width: 300px;
+    height: 400px;
+}
+
+.user_photo img {
+    position: absolute;
+    /* outline: solid white; */
+
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width: 300px;
+    height:400px;
+    border-radius: 10px;
+    object-fit:cover;
+}
+
+.post_footer {
+    margin: 4px 10px 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* outline: solid blue; */
+    color: var(--primary);
+}
+
+.user_avatar {
+    /* position: relative; */
+    display: flex;
+    /* outline: solid red; */
+    justify-content: flex-start;
+    align-items: center;
+    /* overflow:hidden; */
+    /* width:70%; */
+    /* height:30px; */
+}
+
+.user_avatar img {
+    /* outline: solid red; */
+    /* top:50%; */
+    /* left:50%; */
+    /* transform:translate(-50%,-50%); */
+    width:30px;
+    height:30px;
+    margin-right: 10px;
+    border-radius: 50%;
+    object-fit:cover;
+}
+
+.user_avatar span {
+    font-size: 13px;
+    /* margin-bottom: 6px; */
+}
+
+.reaction {
+     width: 40px;
+   display: flex;
+    justify-content: space-between;
+    /* outline: solid green; */
+}
+
+/* Footer */
+.author a {
+    text-decoration: none;
+}
+
+.author {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.author i {
+    font-size: 20px;
+    color: var(--default);
+}
+
+.author :not(:last-child) {
+    margin-right: 10px;
+}
+/* footer {
+    position: fixed;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+
+} */
+
+footer span {
+    color: var(--default);
+}

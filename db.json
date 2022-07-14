@@ -1,0 +1,16 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "image": "/images/photo/one.jpg",
+            "avatar": "/images/photo/avatar.jpg",
+            "username": "@alentumanova_"
+        },
+        {
+            "id": 2,
+            "image": "/images/photo/two.jpg",
+            "avatar": "/images/photo/avatar.jpg",
+            "username": "@alentumanova_"
+        }
+    ]
+}
