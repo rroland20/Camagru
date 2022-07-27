@@ -14,15 +14,16 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: var(--bgr);
+    background: var(--bgr);
     min-height: 100vh;
     font-family: 'Sarala', sans-serif;
     text-align: center;
     margin: auto;
-    
+    font-size: 16px;
 }
 /* Header */
 header {
@@ -84,16 +85,7 @@ hr {
 }
 
 /* Main */
-#main {
-    display: flex;
-    /* offset-anchor: center; */
-    margin: 1em auto 2em;
-    /* width: 900px; */
-    /* outline: solid red; */
-    /* flex-direction: row; */
-    justify-content: center;
-    flex-wrap: wrap;
-}
+
 
 .column_odd {
     width: 300px;

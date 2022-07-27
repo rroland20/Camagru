@@ -1,0 +1,62 @@
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    border-bottom: 1px solid var(--hr);
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: var(--bgr);
+    padding-top: 6px;
+    z-index: 10;
+}
+
+.header_link {
+    display: flex;
+}
+
+.header_logo {
+    width: 130px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.header_nav {
+    display: flex;
+}
+
+.header_nav-link {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.header_nav-link--with-margin-right {
+    margin-right: 30px;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    background: var(--bg_button);
+    padding: 2px 12px;
+    border-radius: 4px;
+}
+
+.icon-add {
+    /* margin-right: 30px; */
+    font-size: 10px;
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+}
+
+.login i {
+    margin-right: 10px;
+}
+
+.login span {
+    font-size: 20px;
+}

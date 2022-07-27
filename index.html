@@ -5,116 +5,125 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="src/styles/common.css">
+    <link rel="stylesheet" href="src/styles/header.css">
+    <link rel="stylesheet" href="src/styles/gallery.css">
     <title>Camagru</title>
-    <link rel="icon" href="images/logo_icon/favicon .ico" type="image/x-icon">
+    <link rel="icon" href="images/logo_icon/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <a class="logo" href="/"><img class="logo" src="images/logo_icon/logo_camagru.png" alt="logo-camagru"></a>
-        <div class="actions">
-            <a class="nav" href="/">
-                <i class="icon-add"></i>
+    <header class="header">
+        <a class="header_link" href="/">
+            <img class="header_logo" src="images/logo_icon/logo_camagru.png" alt="logo-camagru">
+        </a>
+        <nav class="header_nav">
+            <a class="header_nav-link header_nav-link--with-margin-right" href="/add/">
+                <svg class="header_icon" width="33" height="34" viewBox="0 0 33 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.4999 17.0962H10.6666M16.4999 11.0385V17.0962V11.0385ZM16.4999 17.0962V23.1539V17.0962ZM16.4999 17.0962H22.3333H16.4999Z" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M16.4999 32.2404C24.5541 32.2404 31.0833 25.4601 31.0833 17.0962C31.0833 8.73224 24.5541 1.95193 16.4999 1.95193C8.4458 1.95193 1.91663 8.73224 1.91663 17.0962C1.91663 25.4601 8.4458 32.2404 16.4999 32.2404Z" stroke="white" stroke-width="2"/>
+                </svg>
             </a>
-            <a class="nav" href="/">
+            <a class="header_nav-link" href="/signin/">
                 <div class="login">
                     <i class="icon-person"></i>
                     <span>Log In</span>
                 </div>
             </a>
-        </div>
+        </nav>
     </header>
-    <hr>
     <main id="main">
-        <div class="column_odd">
-            <article class="posts">
-                <div class="user_photo">
-                    <img class="photo" src="/images/photo/placeimg_640_480_arch.jpg" alt="111">
-                </div>
-                <div class="post_footer">
-                    <div class="user_avatar">
-                        <a href="/" class="avatar">
-                            <img src="images/photo/avatar.jpg" alt="avatar">
-                        </a>
-                        <span>@alentumanova_</span>
+        <div class="gallery">
+            <div class="column_odd">
+                <article class="posts">
+                    <div class="user_photo">
+                        <img class="photo" src="/images/photo/placeimg_640_480_arch.jpg" alt="111">
                     </div>
-                    <div class="reaction">
-                        <i class="icon-like"></i>
-                        <i class="icon-comment"></i>
+                    <div class="post_footer">
+                        <div class="user_avatar">
+                            <a href="/" class="avatar">
+                                <img src="images/photo/avatar.jpg" alt="avatar">
+                            </a>
+                            <span>@alentumanova_</span>
+                        </div>
+                        <div class="reaction">
+                            <i class="icon-like"></i>
+                            <i class="icon-comment"></i>
+                        </div>
                     </div>
-                </div>
-            </article>
-            <article class="posts">
-                <div class="user_photo">
-                    <img src="/images/photo/placeimg_640_480_any.jpg" alt="222" class="user_photo">
-                </div>
-                <div class="post_footer">
-                    <div class="user_avatar">
-                        <a href="/" class="avatar">
-                            <img src="images/photo/avatar.jpg" alt="avatar">
-                        </a>
-                        <span>@alentumanova_</span>
+                </article>
+                <article class="posts">
+                    <div class="user_photo">
+                        <img src="/images/photo/placeimg_640_480_any.jpg" alt="222" class="user_photo">
                     </div>
-                    <div class="reaction">
-                        <i class="icon-like"></i>
-                        <i class="icon-comment"></i>
+                    <div class="post_footer">
+                        <div class="user_avatar">
+                            <a href="/" class="avatar">
+                                <img src="images/photo/avatar.jpg" alt="avatar">
+                            </a>
+                            <span>@alentumanova_</span>
+                        </div>
+                        <div class="reaction">
+                            <i class="icon-like"></i>
+                            <i class="icon-comment"></i>
+                        </div>
                     </div>
-                </div>
-            </article>
-        </div>
-        <div class="column_honest">
-            <article class="posts">
-                <div class="user_photo">
-                    <img src="/images/photo/one.jpg" alt="333" class="user_photo">
-                </div>
-                <div class="post_footer">
-                    <div class="user_avatar">
-                        <a href="/" class="avatar">
-                            <img src="images/photo/avatar.jpg" alt="avatar">
-                        </a>
-                        <span>@alentumanova_</span>
+                </article>
+            </div>
+            <div class="column_honest">
+                <article class="posts">
+                    <div class="user_photo">
+                        <img src="/images/photo/one.jpg" alt="333" class="user_photo">
                     </div>
-                    <div class="reaction">
-                        <i class="icon-like"></i>
-                        <i class="icon-comment"></i>
+                    <div class="post_footer">
+                        <div class="user_avatar">
+                            <a href="/" class="avatar">
+                                <img src="images/photo/avatar.jpg" alt="avatar">
+                            </a>
+                            <span>@alentumanova_</span>
+                        </div>
+                        <div class="reaction">
+                            <i class="icon-like"></i>
+                            <i class="icon-comment"></i>
+                        </div>
                     </div>
-                </div>
-            </article>
-            <article class="posts">
-                <div class="user_photo">
-                    <img src="/images/photo/two.jpg" alt="444" class="user_photo">
-                </div>
-                <div class="post_footer">
-                    <div class="user_avatar">
-                        <a href="/" class="avatar">
-                            <img src="images/photo/avatar.jpg" alt="avatar">
-                        </a>
-                        <span>@alentumanova_</span>
+                </article>
+                <article class="posts">
+                    <div class="user_photo">
+                        <img src="/images/photo/two.jpg" alt="444" class="user_photo">
                     </div>
-                    <div class="reaction">
-                        <i class="icon-like"></i>
-                        <i class="icon-comment"></i>
+                    <div class="post_footer">
+                        <div class="user_avatar">
+                            <a href="/" class="avatar">
+                                <img src="images/photo/avatar.jpg" alt="avatar">
+                            </a>
+                            <span>@alentumanova_</span>
+                        </div>
+                        <div class="reaction">
+                            <i class="icon-like"></i>
+                            <i class="icon-comment"></i>
+                        </div>
                     </div>
-                </div>
-            </article>
-        </div>
-        <div class="column_odd">
-            <article class="posts">
-                <div class="user_photo">
-                    <img src="/images/photo/tree.jpg" alt="555" class="user_photo">
-                </div>
-                <div class="post_footer">
-                    <div class="user_avatar">
-                        <a href="/" class="avatar">
-                            <img src="images/photo/avatar.jpg" alt="avatar">
-                        </a>
-                        <span>@alentumanova_</span>
+                </article>
+            </div>
+            <div class="column_odd">
+                <article class="posts">
+                    <div class="user_photo">
+                        <img src="/images/photo/tree.jpg" alt="555" class="user_photo">
                     </div>
-                    <div class="reaction">
-                        <i class="icon-like"></i>
-                        <i class="icon-comment"></i>
+                    <div class="post_footer">
+                        <div class="user_avatar">
+                            <a href="/" class="avatar">
+                                <img src="images/photo/avatar.jpg" alt="avatar">
+                            </a>
+                            <span>@alentumanova_</span>
+                        </div>
+                        <div class="reaction">
+                            <i class="icon-like"></i>
+                            <i class="icon-comment"></i>
+                        </div>
                     </div>
-                </div>
-            </article>
+                </article>
+            </div>
         </div>
     </main>
     <hr>
