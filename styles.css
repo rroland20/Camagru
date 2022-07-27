@@ -172,14 +172,17 @@ hr {
     /* height:30px; */
 }
 
+.avatar {
+    margin-right: 10px;
+    margin-top: 7px;
+}
+
 .user_avatar img {
     /* outline: solid red; */
-    /* top:50%; */
     /* left:50%; */
     /* transform:translate(-50%,-50%); */
     width:30px;
     height:30px;
-    margin-right: 10px;
     border-radius: 50%;
     object-fit:cover;
 }
