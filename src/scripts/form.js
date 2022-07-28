@@ -23,7 +23,10 @@
             body: JSON.stringify(signUpData),
         })
         .then((response) => {
-            console.log("response", response);
+            return response.json();
+        })
+        .then((data) => {
+            console.log(data);
         })
         .catch((error) => {
             console.error(error);

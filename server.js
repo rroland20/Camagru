@@ -2,10 +2,30 @@ var http = require('http');
 var fs = require('fs');
 var path = require('path');
 
+const urls = [
+    {
+        url: '/',
+        template: './index.html',
+    },
+    {
+        url: '/signin/',
+        template: './signin/index.html',
+    },
+    {
+        url: '/add/',
+        template: './signin/index.html',
+    }
+];
+
 function sendStaticFiles(request, response) {
     var filePath = '.' + request.url;
-    if (filePath == './') {
-        filePath = './index.html';
+    
+    const page = urls.find((urlObject) => {
+        return urlObject.url === request.url;
+    });
+
+    if (page) {
+        filePath = page.template;
     }
 
     var extname = String(path.extname(filePath)).toLowerCase();
@@ -53,7 +73,7 @@ function sendUserPost(response) {
     if (request.url === '/user-posts/') {
         fs.readFile('./db.json', function(error, content) {
             if (error) {
-                if(error.code == 'ENOENT') {
+                if (error.code == 'ENOENT') {
                     fs.readFile('./404.html', function(error, content) {
                         response.writeHead(404, { 'Content-Type': 'text/html' });
                         response.end(content, 'utf-8');
