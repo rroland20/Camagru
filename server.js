@@ -74,12 +74,25 @@ function sendUserPost(response) {
     }
 }
 
+function signUp(response) {
+    const responseData = {
+        status: "success",
+    };
+
+    response.writeHead(200, { 'Content-Type': 'application/json' });
+    response.end(JSON.stringify(responseData), 'utf-8');
+}
+
 http.createServer(function (request, response) {
     console.log('request ', request.url);
 
     switch (request.url) {
         case '/user-post/':
             sendUserPost(response);
+            break;
+
+        case '/api/signup/':
+            signUp(response);
             break;
 
         default: sendStaticFiles(request, response);

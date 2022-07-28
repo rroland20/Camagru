@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="/src/styles/common.css">
     <link rel="stylesheet" href="/src/styles/header.css">
+    <link rel="stylesheet" href="/src/styles/form.css">
     <link rel="stylesheet" href="/src/styles/gallery.css">
     <title>Sign In / Camagru</title>
     <link rel="icon" href="/images/logo_icon/favicon.ico" type="image/x-icon">
@@ -32,8 +33,20 @@
         </nav>
     </header>
     <main id="main">
-        <form>
-            <input />
+        <form id="form-signin" name="form-signin" class="form">
+            <label class="form__input">
+                <span class="form__label">Email</span>
+                <input class="form__input" name="email" type="email" autocomplete="off" placeholder="Enter your email..." />
+            </label>
+            <label class="form__input">
+                <span class="form__label">Username</span>
+                <input class="form__input" name="username" type="text" autocomplete="off" placeholder="Enter your username..." />
+            </label>
+            <label class="form__input">
+                <span class="form__label">Password</span>
+                <input class="form__input" name="password" type="password" placeholder="Enter your password..."/>
+            </label>
+            <button type="submit">Login</button>
         </form>
     </main>
     <hr>
@@ -51,6 +64,6 @@
         </div>
         <span>Author: Rroland(Tumanova Alena)</span>
     </footer>
-    <script src="/src/home.js"></script>
+    <script src="/src/scripts/form.js"></script>
 </body>
 </html>
