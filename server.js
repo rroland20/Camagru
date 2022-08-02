@@ -8,12 +8,16 @@ const urls = [
         template: './index.html',
     },
     {
+        url: '/signup/',
+        template: './signup/index.html',
+    },
+    {
         url: '/signin/',
         template: './signin/index.html',
     },
     {
         url: '/add/',
-        template: './signin/index.html',
+        template: './signup/index.html',
     }
 ];
 

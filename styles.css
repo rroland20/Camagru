@@ -34,7 +34,7 @@ header {
 }
 
 .logo {
-    fill: white;
+    /* fill: white; */
     max-width: 130px;
     max-height: 40px;
     margin-top: 6px;

@@ -20,3 +20,34 @@
     border: 1px solid transparent;
     border-radius: 4px;
 }
+
+.submit {
+    width: 90px;
+    font-size: 16px;
+    font-family: 'Sarala', sans-serif;
+    color: var(--primary);
+    background: var(--bg_button);
+    border: none;
+    margin-top: 10px;
+    padding: 1px 7px;
+    border-radius: 4px;
+}
+
+.pipe {
+    margin: 15px;
+    color: var(--primary);
+}
+
+.button_sign {
+    color: var(--primary);
+    text-decoration: none;
+    
+}
+
+.button_sign:hover {
+    text-decoration: underline;
+}
+
+.button_pass {
+    font-size: 12px;
+}

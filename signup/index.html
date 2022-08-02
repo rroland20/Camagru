@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/src/styles/header.css">
     <link rel="stylesheet" href="/src/styles/form.css">
     <link rel="stylesheet" href="/src/styles/gallery.css">
-    <title>Sign In / Camagru</title>
+    <title>Sign Up / Camagru</title>
     <link rel="icon" href="/images/logo_icon/favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -40,6 +40,10 @@
         </div>
         <form id="form-signup" name="form-signup" class="form">
             <label class="form__input">
+                <span class="form__label">Email</span>
+                <input class="form__input" name="email" type="email" autocomplete="off" placeholder="Enter your email..." />
+            </label>
+            <label class="form__input">
                 <span class="form__label">Username</span>
                 <input class="form__input" name="username" type="text" autocomplete="off" placeholder="Enter your username..." />
             </label>
@@ -47,9 +51,8 @@
                 <span class="form__label">Password</span>
                 <input class="form__input" name="password" type="password" placeholder="Enter your password..."/>
             </label>
-            <button class="submit" type="submit">Sign In</button>
+            <button class="submit" type="submit">Sign Up</button>
         </form>
-        <a class="button_sign button_pass" href="/"><span>Forgot password?</span></a>
     </main>
     <hr>
     <footer>
@@ -66,6 +69,6 @@
         </div>
         <span>Author: Rroland(Tumanova Alena)</span>
     </footer>
-    <script src="/src/scripts/signin.js"></script>
+    <script src="/src/scripts/form.js"></script>
 </body>
 </html>

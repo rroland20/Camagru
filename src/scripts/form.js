@@ -1,6 +1,6 @@
 ;(function() {
 
-    const form = document.querySelector("#form-signin");
+    const form = document.querySelector("#form-signup");
     const inputEmail = document.querySelector("input[name='email']");
     const inputUsername  = document.querySelector("input[name='username']");
     const inputPassword  = document.querySelector("input[name='password']");
