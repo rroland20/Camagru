@@ -18,6 +18,10 @@
 }
 
 body {
+    /*flex*/
+    display: flex;
+    flex-direction: column;
+    /*other*/
     background: var(--bgr);
     min-height: 100vh;
     font-family: 'Sarala', sans-serif;
@@ -197,36 +201,4 @@ hr {
    display: flex;
     justify-content: space-between;
     /* outline: solid green; */
-}
-
-/* Footer */
-.author a {
-    text-decoration: none;
-}
-
-.author {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-}
-
-.author i {
-    font-size: 20px;
-    color: var(--default);
-}
-
-.author :not(:last-child) {
-    margin-right: 10px;
-}
-/* footer {
-    position: fixed;
-    bottom: 20px;
-    display: flex;
-    justify-content: center;
-
-} */
-
-footer span {
-    color: var(--default);
 }

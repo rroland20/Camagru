@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/src/styles/header.css">
     <link rel="stylesheet" href="/src/styles/form.css">
     <link rel="stylesheet" href="/src/styles/gallery.css">
+    <link rel="stylesheet" href="/src/styles/footer.css">
     <title>Sign Up / Camagru</title>
     <link rel="icon" href="/images/logo_icon/favicon.ico" type="image/x-icon">
 </head>
@@ -41,21 +42,20 @@
         <form id="form-signup" name="form-signup" class="form">
             <label class="form__input">
                 <span class="form__label">Email</span>
-                <input class="form__input" name="email" type="email" autocomplete="off" placeholder="Enter your email..." />
+                <input class="form__input" name="email" type="email" autocomplete="off" placeholder="Enter your email..." required />
             </label>
             <label class="form__input">
                 <span class="form__label">Username</span>
-                <input class="form__input" name="username" type="text" autocomplete="off" placeholder="Enter your username..." />
+                <input class="form__input" name="username" type="text" autocomplete="off" placeholder="Enter your username..." required />
             </label>
             <label class="form__input">
                 <span class="form__label">Password</span>
-                <input class="form__input" name="password" type="password" placeholder="Enter your password..."/>
+                <input class="form__input" name="password" type="password" placeholder="Enter your password..." required />
             </label>
             <button class="submit" type="submit">Sign Up</button>
         </form>
     </main>
-    <hr>
-    <footer>
+    <footer class="footer">
         <div class="author">
             <a href="https://github.com/rroland20" target="_blank">
                 <i class="icon-github"></i>

@@ -1,0 +1,19 @@
+.author a { text-decoration: none; }
+
+.author {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.author i {
+    font-size: 20px;
+    color: var(--default);
+}
+
+.author :not(:last-child) { margin-right: 10px; }
+
+.footer { border-top: 1px solid var(--hr); }
+
+.footer span { color: var(--default); }
