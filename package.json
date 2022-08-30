@@ -1,0 +1,25 @@
+{
+  "name": "camagru",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "gridmasonry": "^1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rroland20/Camagru.git"
+  },
+  "author": "Alena Tumanova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rroland20/Camagru/issues"
+  },
+  "homepage": "https://github.com/rroland20/Camagru#readme"
+}
