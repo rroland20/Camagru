@@ -4,7 +4,7 @@
     flex-wrap: wrap;
 }
 
-.masonry {
+/* .masonry {
     display: grid;
     gap: 20px;
     grid: masonry / repeat(auto-fill, minmax(250px, 1fr));
@@ -37,4 +37,4 @@ img {
     z-index: -1;
     grid-column:1;
     grid-row: 1;
-  }
+  } */

@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="/src/styles/header.css">
     <link rel="stylesheet" href="/src/styles/gallery.css">
     <link rel="stylesheet" href="/src/styles/footer.css">
+
+    <script src="/node_modules/gridmasonry/dist/build.js"></script>
+    <script src="/node_modules/gridmasonry/src/GridMasonry.js"></script>
+    <script src="/node_modules/gridmasonry/dist/build.js.map"></script>
+        <script src="/node_modules/gridmasonry/example/example.js"></script>
+        <link rel="stylesheet" href="/node_modules/gridmasonry/example/index.css">
     <title>Camagru</title>
     <link rel="icon" href="/images/logo_icon/favicon.ico" type="image/x-icon">
 </head>
@@ -34,94 +40,128 @@
     </header>
 
         <main id="main">
-            <div class="masonry">
-                <article class="posts">
-                    <div class="user_photo">
-                        <img class="photo" src="/images/photo/placeimg_640_480_arch.jpg" alt="111">
-                    </div>
-                    <div class="post_footer">
-                        <div class="user_avatar">
-                            <a href="/" class="avatar">
-                                <img src="images/photo/avatar.jpg" alt="avatar">
-                            </a>
-                            <span>@alentumanova_</span>
+            <div id="grid-masonry" class="grid-masonry">
+                <div class="grid-masonry-item">
+                    <div class="grid-masonry-item__container">
+                        <div class="grid-masonry-item__image-container">
+                            <img src="/images/photo/placeimg_640_480_arch.jpg" alt="111">
                         </div>
-                        <div class="reaction">
-                            <i class="icon-like"></i>
-                            <i class="icon-comment"></i>
-                        </div>
+                        <div class="grid-masonry-item__title">1 element</div>
                     </div>
-                </article>
-                <article class="posts">
-                    <div class="user_photo">
-                        <img src="/images/photo/placeimg_640_480_any.jpg" alt="222" class="user_photo">
-                    </div>
-                    <div class="post_footer">
-                        <div class="user_avatar">
-                            <a href="/" class="avatar">
-                                <img src="images/photo/avatar.jpg" alt="avatar">
-                            </a>
-                            <span>@alentumanova_</span>
+                </div>
+                <div class="grid-masonry-item">
+                    <div class="grid-masonry-item__container">
+                        <div class="grid-masonry-item__image-container">
+                            <img src="/images/photo/placeimg_640_480_any.jpg" alt="222"">
                         </div>
-                        <div class="reaction">
-                            <i class="icon-like"></i>
-                            <i class="icon-comment"></i>
-                        </div>
+                        <div class="grid-masonry-item__title">2 element</div>
                     </div>
-                </article>
-                <article class="posts">
-                    <div class="user_photo">
-                        <img src="/images/photo/one.jpg" alt="333" class="user_photo">
-                    </div>
-                    <div class="post_footer">
-                        <div class="user_avatar">
-                            <a href="/" class="avatar">
-                                <img src="images/photo/avatar.jpg" alt="avatar">
-                            </a>
-                            <span>@alentumanova_</span>
-                        </div>
-                        <div class="reaction">
-                            <i class="icon-like"></i>
-                            <i class="icon-comment"></i>
-                        </div>
-                    </div>
-                </article>
-                <article class="posts">
-                    <div class="user_photo">
-                        <img src="/images/photo/two.jpg" alt="444" class="user_photo">
-                    </div>
-                    <div class="post_footer">
-                        <div class="user_avatar">
-                            <a href="/" class="avatar">
-                                <img src="images/photo/avatar.jpg" alt="avatar">
-                            </a>
-                            <span>@alentumanova_</span>
-                        </div>
-                        <div class="reaction">
-                            <i class="icon-like"></i>
-                            <i class="icon-comment"></i>
-                        </div>
-                    </div>
-                </article>
-                <article class="posts">
-                    <div class="user_photo">
-                        <img src="/images/photo/tree.jpg" alt="555" class="user_photo">
-                    </div>
-                    <div class="post_footer">
-                        <div class="user_avatar">
-                            <a href="/" class="avatar">
-                                <img src="images/photo/avatar.jpg" alt="avatar">
-                            </a>
-                            <span>@alentumanova_</span>
-                        </div>
-                        <div class="reaction">
-                            <i class="icon-like"></i>
-                            <i class="icon-comment"></i>
-                        </div>
-                    </div>
-                </article>
+                </div>
             </div>
         </main>
+
+        <!-- <main id="main">
+            <div id="grid-masonry" class="grid-masonry">
+                <div class="grid-masonry-item">
+                    <div class="grid-masonry-item__container">
+                        <div class="grid-masonry-item__image-container">
+                            <img class="photo" src="/images/photo/placeimg_640_480_arch.jpg" alt="111">
+                        </div>
+                        <div class="grid-masonry-item__title">
+                            <div class="user_avatar">
+                                <a href="/" class="avatar">
+                                    <img src="images/photo/avatar.jpg" alt="avatar">
+                                </a>
+                                <span>@alentumanova_</span>
+                            </div>
+                            <div class="reaction">
+                                <i class="icon-like"></i>
+                                <i class="icon-comment"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-masonry-item">
+                    <div class="grid-masonry-item__container">
+                        <div class="grid-masonry-item__image-container">
+                            <img src="/images/photo/placeimg_640_480_any.jpg" alt="222" class="user_photo">
+                        </div>
+                        <div class="grid-masonry-item__title">
+                            <div class="user_avatar">
+                                <a href="/" class="avatar">
+                                    <img src="images/photo/avatar.jpg" alt="avatar">
+                                </a>
+                                <span>@alentumanova_</span>
+                            </div>
+                            <div class="reaction">
+                                <i class="icon-like"></i>
+                                <i class="icon-comment"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-masonry-item">
+                    <div class="grid-masonry-item__container">
+
+                        <div class="grid-masonry-item__image-container">
+                            <img src="/images/photo/one.jpg" alt="333" class="user_photo">
+                        </div>
+                        <div class="grid-masonry-item__title">
+                            <div class="user_avatar">
+                                <a href="/" class="avatar">
+                                    <img src="images/photo/avatar.jpg" alt="avatar">
+                                </a>
+                                <span>@alentumanova_</span>
+                            </div>
+                            <div class="reaction">
+                                <i class="icon-like"></i>
+                                <i class="icon-comment"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-masonry-item">
+                    <div class="grid-masonry-item__container">
+
+                        <div class="grid-masonry-item__image-container">
+                            <img src="/images/photo/two.jpg" alt="444" class="user_photo">
+                        </div>
+                        <div class="grid-masonry-item__title">
+                            <div class="user_avatar">
+                                <a href="/" class="avatar">
+                                    <img src="images/photo/avatar.jpg" alt="avatar">
+                                </a>
+                                <span>@alentumanova_</span>
+                            </div>
+                            <div class="reaction">
+                                <i class="icon-like"></i>
+                                <i class="icon-comment"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-masonry-item">
+                    <div class="grid-masonry-item__container">
+
+                        <div class="grid-masonry-item__image-container">
+                            <img src="/images/photo/tree.jpg" alt="555" class="user_photo">
+                        </div>
+                        <div class="grid-masonry-item__title">
+                            <div class="user_avatar">
+                                <a href="/" class="avatar">
+                                    <img src="images/photo/avatar.jpg" alt="avatar">
+                                </a>
+                                <span>@alentumanova_</span>
+                            </div>
+                            <div class="reaction">
+                                <i class="icon-like"></i>
+                                <i class="icon-comment"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main> -->
 
     <!-- <main id="main">
         <div class="gallery">
